@@ -1,0 +1,333 @@
+:root{
+    --black:#000000;
+    --white:#FFFFFF;
+    --white-intro:#f7f4f1;
+    --grey:#222222;
+}
+
+html{
+    box-sizing: border-box;
+}
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--white);
+}
+
+.container{
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--black);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__menu{
+    display: flex;
+    padding: 21px;
+    justify-content: space-between;
+}
+
+.header__list{
+    display: flex;
+    gap: 40px;
+}
+
+.list-link{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.login-button{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 20px;
+    background-color:inherit;
+    border: 0;
+    font-family: "PT Sans Narrow", sans-serif; /* почему шрифт не переносится  из body?*/
+}
+
+.main{
+    background-image: url(img/IMG_4331-чб-веб-min-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0.6);
+    z-index: -1;
+}
+
+.intro__img{
+    padding: 60px 0;
+    margin: 0 auto;
+    display: block;
+}
+
+.advantages__list{
+    display: flex;
+    gap:27px;
+    padding-bottom: 74px;
+}
+
+.advantages__list-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.advantages__list-heading{
+    font-size:30px ;
+    line-height:42px ;
+    margin: 0 ;
+    margin-bottom: 10px;
+
+}
+
+.info-section{
+
+}
+
+.info-section1{
+    padding: 45px 45px 50px 80px;
+    margin-bottom: 30px;
+    background-color: #f7f4f1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-section2{
+    padding: 45px 80px;
+    margin-bottom: 0px;
+    background-color: #f7f4f1;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.section-heading{
+    font-size: 30px;
+    line-height: 42px;
+    color: var(--black);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.news{
+    color: var(--black);
+    width: 360px;
+    margin-bottom: 15px;
+}
+
+.news-text{
+    margin: 0 ;
+    margin-bottom: 25px;
+}
+
+.all-news{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    border: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.gallery-img{
+    margin: 40px 0 50px 0;
+}
+
+.gallery-button{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.gallery-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.conatcts{
+    color:var(--black);
+    flex-grow: 1;
+    flex-basis:0 ;
+}
+
+.section-heading-contacts{
+    margin-bottom: 22px;
+}
+
+.text{
+    margin: 0;
+}
+
+.text-1{
+    margin-bottom: 17px;
+}
+
+.text-2{
+    margin-bottom: 35px;
+}
+
+.contacts-button{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px 30px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.contacts-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.appointment{
+    color:var(--black);
+    flex-grow: 1;
+    flex-basis:0 ;
+}
+
+.section-heading-appointment{
+    margin-bottom: 30px;
+}
+
+.appointment-text{
+    color: var(--black);
+    width: 325px;
+    margin-bottom: 11px;
+}
+
+.appointment-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-input{
+    border: 2px var(--black) solid;
+    padding: 15px;
+    display: inline-block;
+    width: 170px;
+}
+
+.appointment-input::placeholder{
+    color: var(--grey);
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items:center ;
+    margin-bottom: 15px;
+}
+
+.appointment-label{
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.appointment-button{
+    width:  92%;
+    border: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 15px 50px;
+    border: 0;
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+    position: relative;
+    left: 16px;
+}
+.mega-costil{
+    width: 100%;
+    height: 30px;
+}
+/* с этой формой мега тупые костыли были извините был бы рад посмотреть как правильно она должна была бы выглядеть */
+
+.footer{
+    background-color: var(--grey);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0 41px 0;
+}
+
+.footer__inner p {
+    margin: 0;
+}
+
+.footer-links .footer-text{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer__links-menu{
+    display: flex;
+    gap: 5px;
+}
+
+.footer__links-item{
+    background-color: var(--black);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wow-sps .footer-text{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.name{
+    background-color: var(--black);
+    padding: 10px;
+}

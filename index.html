@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop Borodinski</title> 
+    <title>Barbershop Borodinski</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="container"><!-- вы делали container вложенным ,но например в данном макете можно же в сам контейнер вложить и header и footer и main? -->
-            <div class="header__inner"><!-- или лучше использовать тег <menu> ? -->
-                <nav class="header__menu">
+            <nav class="header__menu"> <!-- или лучше использовать тег <menu> ? -->
                     <ul class="header__list">
                         <li class="list-item">
                             <a href="#" class="list-link">
@@ -37,12 +40,12 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+               
                 <div class="login">
                     <img src="img/login.svg" alt="кнопка входа" class="login-icon"><!--я почитал что не всегда надо alt заполнять , в данном случае вроде как надо,я правильно понял?-->
                     <button class="login-button">ВХОД</button>
-                </div>
-            </div>
+                </div> 
+            </nav>
         </div>
     </header>
     <main class="main">
@@ -50,7 +53,7 @@
         <section class="intro"> <!-- спасибо вам за название класса ==),не знал как можно называть такие секции -->
             <div class="container">
                 <div class="intro__inner">
-                    <img src="img/index-logo.svg" alt="логотип барбершопа Borodinski">
+                    <img src="img/index-logo.svg" alt="логотип барбершопа Borodinski" class="intro__img">
                     <div class="advantages">
                         <ul class="advantages__list">
 
@@ -93,7 +96,7 @@
 
         <section class="news-and-gallery">
             <div class="container">
-                <div class="info-section">
+                <div class="info-section1">
                     <div class="news-section">
                         <h2 class="section-heading">НОВОСТИ</h2>
                         <div class="news">
@@ -105,8 +108,8 @@
                             <time class="news-date">18 января</time>
                         </div>
                         <button class="all-news">ВСЕ НОВОСТИ</button>
-
-                    </div>
+                    </div>                       
+                     <div class="divider"></div>
                     <div class="gallery">
                         <h2 class="section-heading">ФОТОГАЛЕРЕЯ</h2>
                         <img src="img/Layer 21.jpg" alt="фотографии нашего барбершопа" class="gallery-img">
@@ -125,10 +128,10 @@
 
         <section class="contacts-and-appointment">
             <div class="container">
-                <div class="info-section">
+                <div class="info-section2">
 
                     <div class="conatcts">
-                        <h2 class="section-heading">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                        <h2 class="section-heading section-heading-contacts">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
                         <div class="contacts-text">
                             <div class="text-1">
                                 <p class="text">БАРБЕРШОП «БОРОДИНСКИЙ»</p>
@@ -146,23 +149,28 @@
                             <button class="contacts-button">ОБРАТНАЯ СВЯЗЬ</button>
                         </div>
                     </div>
-
+                    <div class="divider"></div>
                     <div class="appointment">
-                        <h2 class="section-heading">ЗАПИСАТЬСЯ</h2>
+                        <h2 class="section-heading section-heading-appointment">ЗАПИСАТЬСЯ</h2>
                         <p class="appointment-text">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
                             С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-                        <form action="#">
-                            <label for="#">ДАТА</label>
-                            <input type="text" placeholder="08.10.2017">
-
-                            <label for="#">ВРЕМЯ</label>
-                            <input type="text" placeholder="10:00">
-
-                            <label for="#">ВАШЕ ИМЯ</label>
-                            <input type="text" placeholder="УБорода">
-
-                            <label for="#">ТЕЛЕФОН</label>
-                            <input type="text" placeholder="+7 123 456-78-90">
+                        <form action="#" class="appointment-form">
+                        <div class="inner">
+                            <label  class="appointment-label" for="#">ДАТА</label>
+                            <input class="appointment-input" type="text" placeholder="08.10.2017">
+                        </div>
+                        <div class="inner">
+                            <label class="appointment-label" for="#">ВРЕМЯ</label>
+                            <input class="appointment-input" type="text" placeholder="10:00">
+                        </div>
+                        <div class="inner">
+                            <label class="appointment-label" for="#">ВАШЕ ИМЯ</label>
+                            <input class="appointment-input" type="text" placeholder="Борода">
+                        </div>
+                        <div class="inner">
+                            <label class="appointment-label" for="#">ТЕЛЕФОН</label>
+                            <input class="appointment-input" type="text" placeholder="+7 123 456-78-90">
+                        </div>
                             <button class="appointment-button">
                                 ОТПРАВИТЬ
                             </button>
@@ -172,6 +180,8 @@
                 </div>
             </div>
         </section>
+        <div class="mega-costil"></div>
+        <!-- я не знаю как оставить отступ там так,чтобы картинка осталась -->
     </main>
 <footer class="footer">
     <div class="container">
